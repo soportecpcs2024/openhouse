@@ -16,8 +16,8 @@
     position: absolute;
     top: 0px; /* Ajusta la distancia desde la parte superior */
     right: 10px; /* Ajusta la distancia desde la parte derecha */
-    font-size: 2rem; /* Ajusta el tamaño del icono si es necesario */
-    color: yellow; /* Ajusta el color del icono */
+    font-size: 1.5rem; /* Ajusta el tamaño del icono si es necesario */
+    color: blue; /* Ajusta el color del icono */
     z-index: 3; /* Asegura que el icono esté por encima de otros elementos */
     
     transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -30,9 +30,7 @@
     align-items: center;
      
 }
-.salir-p{
-    color: rgb(45, 45, 45);
-}
+ 
 
 .exit-icon a {
     color: inherit; /* Mantiene el color del enlace igual que el icono */
@@ -54,8 +52,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px; /* Ajusta el tamaño del círculo */
-    height: 60px; /* Ajusta el tamaño del círculo */
+    width: 80px; /* Ajusta el tamaño del círculo */
+    height: 80px; /* Ajusta el tamaño del círculo */
     border-radius: 50%; /* Hace que el contenedor sea circular */
      
     text-align: center; /* Centra el texto dentro del círculo */
@@ -77,7 +75,8 @@
 
 .salir-p {
     margin-top: 5px; /* Espaciado entre el icono y el texto */
-    font-size: 14px; /* Ajusta el tamaño del texto */
+    font-size: 12px; /* Ajusta el tamaño del texto */
+    color: rgb(37, 37, 37);
 }
 
 
@@ -347,6 +346,11 @@
     .hora{
         margin-top: 30px;
         text-align: right;
+    }
+
+    .salir-p {
+        
+        color: white;
     }
 
    

@@ -30,8 +30,8 @@ const Openhouse = () => {
           className="salir-circle"
         >
           <div className="salir">
+            <p className="salir-p">Pág principal</p>
             <GiExitDoor />
-            <p className="salir-p">Salir</p>
           </div>
         </a>
       </div>

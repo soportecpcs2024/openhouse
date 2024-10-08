@@ -1,0 +1,11 @@
+/* Estilos generales */
+* {
+    margin: 0;       /* Eliminar márgenes */
+    padding: 0;      /* Eliminar relleno */
+    box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+}
+
+html, body {
+    width: 100%;     /* Ancho completo */
+    height: 100%;    /* Altura completa */
+}

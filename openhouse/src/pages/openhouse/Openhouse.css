@@ -1,0 +1,358 @@
+/* Estilo general */
+.openhouse-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+    background-image: radial-gradient(circle at 50% -20.71%, #f3f7ff44 0, #d6e3ff 25%, #a1bcf5 50%, #0144fb 75%, #6283e8 100%);
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 100vh; /* Altura mínima del contenedor */
+}
+
+/* Icono de salida en la esquina superior derecha */
+.exit-icon {
+    position: absolute;
+    top: 0px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la parte derecha */
+    font-size: 2rem; /* Ajusta el tamaño del icono si es necesario */
+    color: yellow; /* Ajusta el color del icono */
+    z-index: 3; /* Asegura que el icono esté por encima de otros elementos */
+    
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+   
+}
+.salir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+}
+.salir-p{
+    color: rgb(45, 45, 45);
+}
+
+.exit-icon a {
+    color: inherit; /* Mantiene el color del enlace igual que el icono */
+}
+
+.exit-icon a:hover {
+    color: #ffcc00; /* Cambia el color del icono al pasar el cursor */
+}
+
+.exit-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajusta según tu diseño */
+}
+
+.salir-circle {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Ajusta el tamaño del círculo */
+    height: 60px; /* Ajusta el tamaño del círculo */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+     
+    text-align: center; /* Centra el texto dentro del círculo */
+    color: #333; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    position: relative; /* Para posicionar el texto */
+    box-shadow: rgba(2, 40, 255, 0.429) 0px 5px 15px;
+}
+
+.salir {
+    position: absolute; /* Posiciona el icono y texto en el centro */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    display: flex;
+    flex-direction: column; /* Asegura que el icono y el texto estén uno encima del otro */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.salir-p {
+    margin-top: 5px; /* Espaciado entre el icono y el texto */
+    font-size: 14px; /* Ajusta el tamaño del texto */
+}
+
+
+/* Texto CPCS en el fondo */
+.cpcs-background {
+    
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: rgb(0, 0, 255);
+    z-index: 1;
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.cpcs-background-b{
+     
+    font-size: 5rem;
+    margin-top: -95px;
+    font-weight: bold;
+    color: rgba(255, 255, 0, 0.975);
+    z-index: -1;
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+ 
+
+/* Estilo del encabezado */
+.openhouse-header h1 {
+    font-size: 3rem;
+    color: #007bff;
+    animation: colorChange 3s infinite;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    z-index: 1;
+    
+     
+}
+
+/* Animación de cambio de color */
+@keyframes colorChange {
+    0% { color: #007bff; }
+    50% { color: yellow; }
+    100% { color: #007bff; }
+}
+
+/* Texto animado */
+.animated-text {
+    font-size: 1rem;
+    animation: slideIn 1.5s ease-out forwards;
+    opacity: 0;
+    font-family: "Aclonica", sans-serif;
+    color: rgb(23, 23, 23);
+    z-index: 1;
+}
+
+/* Animación de deslizamiento del texto */
+@keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+/* Contenedor de la imagen */
+.openhouse-image-container {
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-image: radial-gradient(ellipse farthest-corner at 45px 30px , #fff 50%, rgba(0, 255, 0, 0) 0%, yellow 50%);
+    z-index: 2;
+     
+}
+
+.openhouse-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    z-index: 2;
+}
+
+.openhouse-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button-inscribete {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 2rem;
+    transition: transform 0.7s ease, box-shadow 0.7s ease, background-color 0.7s ease;
+}
+
+.cta-button-inscribete:hover {
+    transform: scale(1.03); /* Reduce el efecto de escala para hacerlo más sutil */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    background-color: #0056b3; /* Cambio de color más suave */
+}
+
+/* Estilo de los detalles */
+.openhouse-details {
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.openhouse-details h2 {
+    font-size: 2.5rem;
+    color: #28a745;
+}
+
+.openhouse-details p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+.openhouse-image-container-text{
+    padding: 20px;
+     font-size: 25px;
+     font-weight: 900;
+    text-align: center;
+}
+
+
+
+.header-openhouse{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inscribete{
+     display: flex;
+     flex-direction: column;
+    align-items: end;
+     margin: 20px;
+    
+}
+.inscribete span{
+    font-weight: 900;
+}
+
+
+@media (min-width: 820px){
+    .openhouse-header h1 {
+        font-size: 5rem;
+    }
+    .cpcs-background-b{
+        font-size: 6.6rem;
+        margin-top: -150px;
+    }
+    .cpcs-background{
+        font-size: 6.8rem;
+    }
+    .animated-text {
+        margin-top: 2rem;
+        font-size: 1.2rem; 
+    }
+}
+@media (min-width: 1024px){
+    .openhouse-header h1 {
+        font-size: 8rem;
+    }
+    .cpcs-background-b{
+        font-size: 11rem;
+        margin-top: -210px;
+    }
+    .cpcs-background{
+        font-size: 10.8rem;
+    }
+    .animated-text {
+        margin-top: 2rem;
+        font-size: 3rem; 
+    }
+    
+}
+
+@media (min-width: 1280px){
+    .header-openhouse{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+
+    .openhouse-header h1 {
+        font-size: 7rem;
+        margin-right: 2rem;
+        margin-left: 100px;
+    }
+
+    .cpcs-background-b{
+        font-size: 8rem;
+        margin-top: -160px;
+        
+    }
+
+    .cpcs-background{
+        font-size: 8.2rem;
+    }
+    .animated-text {
+        margin-top: 2rem;
+        font-size: 2rem; 
+        margin-left: 100px;
+    }
+
+    .openhouse-image-container {
+       
+        flex-direction: row;
+        
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        
+         
+    }
+    .openhouse-image {
+        width: 100%; 
+    }
+
+    .inscribete{
+        margin-top: 120px;
+        font-size: 25px;
+         
+    }
+
+    .hora{
+        margin-top: 30px;
+        text-align: right;
+    }
+
+   
+
+     
+ 
+     
+    
+}
